@@ -471,7 +471,7 @@ while total_downloaded < total_to_download:
 			file_mode = 'w'
 		elif args.format == 'original':
 			data_filename = args.directory + '/activity_' + str(a['activityId']) + '.zip'
-			fit_filename = args.directory + '/' + str(a['activityId']) + '.fit'
+			fit_filename = args.directory + '/' + str(a['activityId']) + '_ACTIVITY.fit'
 			download_url = url_gc_original_activity + str(a['activityId'])
 			file_mode = 'wb'
 		elif args.format == 'json':
